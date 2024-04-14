@@ -12,51 +12,55 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="bootstrap.min.css"
+   <link rel="stylesheet" href="bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="css/interdace.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
 </head>
 <body>
+    
     <div class="container-fluid p-0 d-flex h-100">
         <div id="bdSidebar" class="d-flex flex-column flex-shrink-0 p-3 bg-success text-white offcanvas-md offcanvas-start" style="width: 280px;">
             <a href="#" class="navbar-brand">
-                <h5><i class="fa-solid fa-bomb me-2" style="font-size: 28px;"></i>Floristeria Luiri's</h5>
+                <h5><i class="fa-solid fa-bomb me-2" style="font-size: 28px;"></i> Floristeria Luiri's</h5>
             </a>
             <hr>
             <ul class="mynav nav nav-pills flex-column mb-auto">
                 <li class="nav-item mb-1">
-                    <a href="#" class="active">
+                    <a href="index.html" id="item_menu_inicio" class="active">
                         <i class="fa-solid fa-wave-square"></i>
                         Inicio
                     </a>
                 </li>
                 <li class="nav-item mb-1">
-                    <a href="#" class="">
+                    <a href="nuevos-productos.html" id="item_menu_nuevos-productos" class="">
                         <i class="fa-solid fa-bell"></i>
                         Nuevos Productos
                         <span class="notification-badge">5</span>
                     </a>
                 </li>
                 <li class="nav-item mb-1">
-                    <a href="#" class="">
+                    <a href="pedido.html" id="item_menu_pedido" class="">
                         <i class="fa-solid fa-chart-simple"></i>
-                        Flores Disponibles
+                    ¡Encarga Tu Pedido!
                     </a>
                 </li>
                 <li class="nav-item mb-1">
-                    <a href="#" class="">
+                    <a href="arreglos.html" id="item_menu_pedido" class="">
                         <i class="fa-solid fa-star"></i>
                         Arreglos
                     </a>
                 </li>
                 <li class="nav-item mb-1">
-                    <a href="#" class="">
+                    <a href="precios.html" id="item_menu_precios">
                         <i class="fa-solid fa-cart-shopping"></i>
                         Precios
                     </a>
                 </li>
                 <li class="nav-item mb-1">
-                    <a href="#" class="">
+                    <a href="informacion.html" id="item_menu_informacion" class="">
                         <i class="fa-solid fa-user"></i>
-                        Contactanos!
+                        Informacion Personal
                     </a>
                 </li>
             </ul>
@@ -65,7 +69,7 @@
                 <img src="img/b1.jpeg" class="img-fluid rounded me-2" width="50px" alt="">
                 <span>
                     <h6 class="mt-1 mb-0">Richard Lopez</h6>
-                    <small>ralgrich@gmail.com </small>
+                    <small>ralgrich@gmail.com</small>
                 </span>
             </div>
         </div>
@@ -75,75 +79,15 @@
                 <a href="#" class="text-white" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar">
                     <i class="fa-solid fa-bars"></i>
                 </a>
-                <span class="ms-3">Navbar</span>
+                <span class="ms-3">Barra de Navegacion</span>
             </div>
-    <div class="container my-3">
-        <div class="row">
-            <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-4 bg-white">
-                <h2>Encarga tu pedido</h2>
-                <form>
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese Su Nombre Para Identificarlo">
-                      </div>
-                      <div class="mb-3">
-                        <label for="descripcion" class="form-label">Descripcion Del Encargo</label>
-                        <textarea class="form-control" id="descripcion" rows="3"></textarea>
-                      </div>
-                      
-                      <div class="mb-3">
-                        <label for="programadores" class="form-label">Numero De Flores</label>
-                        <input type="number" class="form-control" id="programadores">
-                    </div>
-                    
-                    <div class="d-grid gap-2">
-                        <button class="bnt boton-personalizado">Guardar</button>
-                        <button class="btn btn-secondary">Limpiar</button>
-                      </div>
-                      
-                </form>
-                
-              </div>
-              <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 py-4 bg-white">
-                <h2>Flores Mas Populares</h2>
-                <table class="table table-striped table-dark">
-                    <thead>
-                        <tr>
-                            <th class="centrado">#</th>
-                            <Th class="centrado">Flores</Th>
-                            <th class="centrado">Cantidad Vendidas Este Mes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="centrado">1</td>
-                            <td class="centrado">Tulipanes</td>
-                            <img src="images/1_K5CYLD3QU4QL9Uee2mmj0g.png" alt="" class="FIFA">
-                            <td class="centrado">57</td>
-                        </tr>
-                        <tr>
-                            <td class="centrado">2</td>
-                            <td class="centrado">Girasoles</td>
-                            <td class="centrado">40</td>
-                        </tr>
-                        <tr>
-                            <td class="centrado">3</td>
-                            <td class="centrado">Rosas</td>
-                            <td class="centrado">25</td>
-                        </tr>
-                        <tr>
-                            <td class="centrado">4</td>
-                            <td class="centrado">Margaritas</td>
-                            <td class="centrado">13</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
+           
 
 
-          </div>
-     </div>
-    </div>
-<script src= "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+<script src= "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+     src="menu.js"</script>
+</script>
 </body>
 </html>
